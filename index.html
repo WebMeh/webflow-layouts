@@ -1,240 +1,303 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>E-commerce Demo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- SECTION 1 : HERO -->
-<section class="hero">
-  <div class="container flex">
-    <div class="left">
-      <h1>Nouvelle Collection</h1>
-      <p>Découvrez nos produits tendance et modernes.</p>
-      <a href="#" class="btn">Acheter maintenant</a>
+  <section class="hero">
+  <div class="slider">
+
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30');">
+      <div class="content">
+        <h1>Nouvelle Collection</h1>
+        <p>Découvrez les dernières tendances à prix imbattables</p>
+        <a href="#" class="btn">Acheter maintenant</a>
+      </div>
     </div>
-    <div class="right">
-      <img src="hero.webp" alt="">
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f');">
+      <div class="content">
+        <h1>Offres Exclusives</h1>
+        <p>Jusqu'à -50% sur vos produits préférés</p>
+        <a href="#" class="btn">Voir les offres</a>
+      </div>
     </div>
+
   </div>
 </section>
 
-<!-- SECTION 2 : PRODUITS -->
-<section class="products">
-  <div class="container">
+  <!-- SECTION 2 : PRODUITS -->
+  <section class="products">
+    <div class="container">
 
-    <h2 style="color: #ff6600; font-weight: bolder;">Nos Produits</h2>
+      <h2 style="color: #ff6600; font-weight: bolder;">Nos Produits</h2>
 
-    <div class="cards">
+      <div class="cards">
 
-      <div class="card">
-        <img src="chaussures.webp" alt="">
-        <h3>Chaussures</h3>
+        <div class="card">
+          <img src="chaussures.webp" alt="">
+          <h3>Chaussures</h3>
+        </div>
+
+        <div class="card">
+          <img src="watch.webp" alt="">
+          <h3>Montres</h3>
+        </div>
+
+        <div class="card">
+          <img src="sac.webp" alt="">
+          <h3>Sacs</h3>
+        </div>
+
       </div>
 
-      <div class="card">
-        <img src="watch.webp" alt="">
-        <h3>Montres</h3>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-container">
+
+      <!-- FORMULAIRE -->
+      <div class="contact-form">
+        <h2>Contactez-nous</h2>
+
+        <label>Nom complet</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Message</label>
+        <textarea rows="4"></textarea>
+
+        <button>Envoyer</button>
       </div>
 
-      <div class="card">
-        <img src="sac.webp" alt="">
-        <h3>Sacs</h3>
+      <!-- IMAGE -->
+      <div class="contact-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
       </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
-
-<section class="contact-section">
-  <div class="container contact-container">
-
-    <!-- FORMULAIRE -->
-    <div class="contact-form">
-      <h2>Contactez-nous</h2>
-
-      <label>Nom complet</label>
-      <input type="text">
-
-      <label>Email</label>
-      <input type="email">
-
-      <label>Message</label>
-      <textarea rows="4"></textarea>
-
-      <button>Envoyer</button>
+  <!-- SECTION 3 : CTA -->
+  <section class="cta">
+    <div class="container flex">
+      <div>
+        <h2>Profitez de nos offres</h2>
+        <p>Inscrivez-vous pour recevoir nos promotions.</p>
+      </div>
+      <a href="#" class="btn">S'inscrire</a>
     </div>
+  </section>
 
-    <!-- IMAGE -->
-    <div class="contact-image">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+  <!-- SECTION 4 : GALERIE SIMPLE -->
+  <section class="gallery">
+    <div class="container">
+      <h2>Galerie Produits</h2>
+
+      <div class="grid-simple">
+        <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908" style="width: 500px; height: 500px;"
+          alt="">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" style="width: 400px; height: 500px;"
+          alt="">
+        <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7" style="width: 400px; height: 500;"
+          alt="">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" style="width: 400px; height: 500;"
+          alt="">
+      </div>
     </div>
+  </section>
+  <section class="order-section">
+    <h2>Commander un produit</h2>
 
-  </div>
-</section>
+    <form class="order-form">
 
-<!-- SECTION 3 : CTA -->
-<section class="cta">
-  <div class="container flex">
-    <div>
-      <h2>Profitez de nos offres</h2>
-      <p>Inscrivez-vous pour recevoir nos promotions.</p>
-    </div>
-    <a href="#" class="btn">S'inscrire</a>
-  </div>
-</section>
-
-<!-- SECTION 4 : GALERIE SIMPLE -->
-<section class="gallery">
-  <div class="container">
-    <h2>Galerie Produits</h2>
-
-    <div class="grid-simple">
-      <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908" style="width: 500px; height: 500px;" alt="">
-      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" style="width: 400px; height: 500px;" alt="">
-      <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7" style="width: 400px; height: 500;" alt="">
-      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" style="width: 400px; height: 500;" alt="">
-    </div>
-  </div>
-</section>
-<section class="order-section">
-  <h2>Commander un produit</h2>
-
-  <form class="order-form" >
-
-    <div class="row">
-      <input type="text" placeholder="Nom complet">
-      <input type="email" placeholder="Email">
-    </div>
-
-    <div class="row">
-      <input type="text" placeholder="Adresse">
-      <select>
-        <option>Ville</option>
-        <option>Azilal</option>
-        <option>Beni Mellal</option>
-        <option>Casablanca</option>
-        <option>Rabat</option>
-        <option>Marrakech</option>
-      </select>
-    </div>
-
-    <div class="row">
-      <input type="text" placeholder="Numéro de carte">
-      <input type="text" placeholder="Date (MM/AA)">
-    </div>
-
-    <div class="row">
-      <input type="text" placeholder="CVV">
-      <input type="text" placeholder="Nom sur la carte">
-    </div>
-
-    <button>Commander</button>
-
-  </form>
-</section>
-
-<!-- SECTION 5 : GALERIE AVANCÉE -->
-<section class="gallery-advanced">
-  <div class="container">
-    <h2>Nos Meilleures Offres</h2>
-
-    <div class="grid-advanced">
-      <img class="big" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="">
-      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="">
-      <img src="https://images.unsplash.com/photo-1585386959984-a415522316e1" alt="">
-      <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="">
-      <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908" alt="">
-    </div>
-  </div>
-</section>
-
-
-<section class="newsletter">
-  <div class="container">
-
-    <h2>Rejoignez Atlas Store</h2>
-    <p>Recevez nos offres et choisissez vos préférences</p>
-
-    <form class="newsletter-form">
-
-      <!-- GRID -->
-      <div class="grid-form">
+      <div class="row">
         <input type="text" placeholder="Nom complet">
         <input type="email" placeholder="Email">
       </div>
 
-      <!-- RADIO -->
-      <label>Genre :</label>
-      <div class="options">
-        <label><input type="radio" name="genre"> Homme</label>
-        <label><input type="radio" name="genre"> Femme</label>
+      <div class="row">
+        <input type="text" placeholder="Adresse">
+        <select>
+          <option>Ville</option>
+          <option>Azilal</option>
+          <option>Beni Mellal</option>
+          <option>Casablanca</option>
+          <option>Rabat</option>
+          <option>Marrakech</option>
+        </select>
       </div>
 
-      <!-- CHECKBOX -->
-      <label>Catégories préférées :</label>
-      <div class="options">
-        <label><input type="checkbox"> Chaussures</label>
-        <label><input type="checkbox"> Montres</label>
-        <label><input type="checkbox"> Sacs</label>
+      <div class="row">
+        <input type="text" placeholder="Numéro de carte">
+        <input type="text" placeholder="Date (MM/AA)">
       </div>
 
-      <button>S'inscrire</button>
+      <div class="row">
+        <input type="text" placeholder="CVV">
+        <input type="text" placeholder="Nom sur la carte">
+      </div>
+
+      <button>Commander</button>
 
     </form>
+  </section>
 
-  </div>
-</section>
+  <!-- SECTION 5 : GALERIE AVANCÉE -->
+  <section class="gallery-advanced">
+    <div class="container">
+      <h2>Nos Meilleures Offres</h2>
+
+      <div class="grid-advanced">
+        <img class="big" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="">
+        <img src="https://images.unsplash.com/photo-1585386959984-a415522316e1" alt="">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="">
+        <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="lists">
+    <div class="container">
+
+      <h2>Pourquoi choisir Atlas Store ?</h2>
+
+      <!-- Liste à puces -->
+      <ul>
+        <li class="list-item">Produits de qualité</li>
+        <li class="list-item">Livraison rapide</li>
+        <li class="list-item">Paiement sécurisé</li>
+      </ul>
+
+      <h2>Étapes de commande</h2>
+
+      <!-- Liste numérotée -->
+      <ol>
+        <li class="list-item-order">Choisir un produit</li>
+        <li class="list-item-order">Remplir le formulaire</li>
+        <li class="list-item-order">Confirmer la commande</li>
+      </ol>
+
+    </div>
+  </section>
+
+  <section class="newsletter">
+
+    <div class="container">
+
+      <h2>Rejoignez Atlas Store</h2>
+      <p>Recevez nos offres et choisissez vos préférences</p>
+
+      <form class="newsletter-form">
+
+        <!-- GRID -->
+        <div class="grid-form">
+          <input type="text" placeholder="Nom complet">
+          <input type="email" placeholder="Email">
+        </div>
+
+        <!-- RADIO -->
+        <label>Genre :</label>
+        <div class="options">
+          <label><input type="radio" name="genre"> Homme</label>
+          <label><input type="radio" name="genre"> Femme</label>
+        </div>
+
+        <!-- CHECKBOX -->
+        <label>Catégories préférées :</label>
+        <div class="options">
+          <label><input type="checkbox"> Chaussures</label>
+          <label><input type="checkbox"> Montres</label>
+          <label><input type="checkbox"> Sacs</label>
+        </div>
+
+        <button>S'inscrire</button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <section class="links">
+    <div class="container">
+
+      <h2>Suivez-nous</h2>
+
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <br>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <br>
+      <a href="https://google.com" target="_blank">Visiter Google</a>
+
+    </div>
+  </section>
 
 
-<script>
-// Message personnalisé
-function showMessage() {
-    alert("Le formateur a bloqué cette action");
-}
+  <script>
+    let slides = document.querySelectorAll(".slide");
+    let index = 0;
 
-// Bloquer clic droit
-document.addEventListener("contextmenu", function(e) {
-    e.preventDefault();
-    showMessage();
-});
-
-// Bloquer touches clavier
-document.addEventListener("keydown", function(e) {
-
-    // F12
-    if (e.key === "F12") {
-        e.preventDefault();
-        showMessage();
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 3000);
+    // Message personnalisé
+    function showMessage() {
+      alert("Le formateur a bloqué cette action");
     }
 
-    // Ctrl+U
-    if (e.ctrlKey && e.key.toLowerCase() === "u") {
-        e.preventDefault();
-        showMessage();
-    }
+    // Bloquer clic droit
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+      showMessage();
+    });
 
-    // Ctrl+Shift+I
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
-        e.preventDefault();
-        showMessage();
-    }
+    // Bloquer touches clavier
+    document.addEventListener("keydown", function (e) {
 
-    // Ctrl+Shift+J
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") {
+      // F12
+      if (e.key === "F12") {
         e.preventDefault();
         showMessage();
-    }
+      }
 
-    // Ctrl+Shift+C
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") {
+      // Ctrl+U
+      if (e.ctrlKey && e.key.toLowerCase() === "u") {
         e.preventDefault();
         showMessage();
-    }
-});
-</script>
+      }
+
+      // Ctrl+Shift+I
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
+        e.preventDefault();
+        showMessage();
+      }
+
+      // Ctrl+Shift+J
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") {
+        e.preventDefault();
+        showMessage();
+      }
+
+      // Ctrl+Shift+C
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") {
+        e.preventDefault();
+        showMessage();
+      }
+    });
+  </script>
 </body>
+
 </html>
